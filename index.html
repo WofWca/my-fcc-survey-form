@@ -8,6 +8,49 @@
   <link rel="stylesheet" type="text/css" media="screen" href="index.css">
 </head>
 <body>
-  
+  <h1 id="title">Title</h1>
+  <form id="survey-form">
+    <legend><p id="description">Description</p></legend>
+    <div class="form-field">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" name="name" required placeholder="Your name">
+    </div>
+    <div class="form-field">
+      <label for="email" id="email-label">E-mail</label>
+      <input id="email" name="email" type="email" required placeholder="Your email">
+    </div>
+    <div class="form-field">
+      <label for="number" id="number-label">Age</label>
+      <input id="number" name="age" type="number" min="0" max="999" required placeholder="Your age">
+    </div>
+    <div class="form-field">
+      <label for="dropdown">Country</label>
+      <select id="dropdown" name="country" required>
+        <option selected disabled hidden value="">Select your country</option>
+        <option value="us">US</option>
+        <option value="france">France</option>
+        <option value="canada">Canada</option>
+      </select>
+    </div>
+    <div class="form-field">
+      <input name="gender" type="radio" value="male" required>
+      <label for="male">Male</label>
+      <input name="gender" type="radio" value="female" required>
+      <label for="female">Female</label>
+    </div>
+    <div>
+      <input type="checkbox" name="smartphone" id="smartphone" value="smartphone">
+      <label for="smartphone">Smartphone</label>
+      <input type="checkbox" name="tv" id="tv" value="tv">
+      <label for="tv">TV</label>
+      <input type="checkbox" name="console" id="console" value="console">
+      <label for="console">Console</label>
+      <input type="checkbox" name="pc" id="pc" value="pc">
+      <label for="pc">PC</label>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+    <textarea name="additional" id="additional" cols="30" rows="3" placeholder="Additional information"></textarea>
+  </form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
