@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  white-space: nowrap; /* So 50% width columns don't wrap. */
+  margin: auto;
+  max-width: 700px;
+}
+
+main > #title {
+  text-align: center;
+}
+
+form {
+  padding: 15px 10px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+form > * {
+  display: block;
+}
+
+form > legend {
+  height: max-content;
+}
+
+#description {
+  text-align: center;
+}
+
+.form-row {
+  margin: 15px 15px;
+}
+
+.form-row .label, .form-row .inputs {
+  display: inline-block;
+}
+
+.form-row .label {
+  vertical-align: top;
+  text-align: right;
+  width: 50%;
+}
+
+.form-row .inputs {
+  text-align: left;
+  width: 50%;
+}
+
+.form-row > .inputs > input:not([type]),
+.form-row > .inputs > input[type="email"],
+.form-row > .inputs > input[type="number"],
+.form-row > .inputs > select,
+.form-row > .inputs > textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form > [type="submit"] {
+  height: 35px;
+  width: 100%;
+}
